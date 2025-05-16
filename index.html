@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,8 @@
     <button class="btn" onclick="startRound()">Start Round</button>
     <button class="btn" onclick="drawCard()" disabled id="drawBtn">Draw Card</button>
     <button class="btn" onclick="stand()" disabled id="standBtn">Stand</button>
+    <button class="btn" onclick="newRound()">New Round</button>
+
     <div>
         <h3>Your Hand (<span id="playerTotal">0</span>):</h3>
         <div id="playerCards" class="card-row"></div>
